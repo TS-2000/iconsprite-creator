@@ -3,13 +3,12 @@ var FS = require('fs'),
     SVGO = require('svgo'),
     cheerio = require('cheerio'),
     $ = cheerio.load('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="display:none;"></svg>'),
-    iconFolder = PATH.resolve(__dirname, '../../assets/app-icons/'),
-    spriteFile = PATH.resolve(__dirname, '../../assets/sprites/sprite.svg'),
+    iconFolder = PATH.resolve(__dirname, process.argv[2]),
+    spriteFile = PATH.resolve(__dirname, process.argv[3]),
     svgNode,
     symbolNode,
     baseSvgNode = $('svg');
 
-console.log(process.argv);
 
 var svgo = new SVGO({
   plugins: [{
