@@ -9,7 +9,6 @@ var FS = require('fs'),
     symbolNode,
     baseSvgNode = $('svg');
 
-
 var svgo = new SVGO({
   plugins: [{
     cleanupAttrs: true,
@@ -106,8 +105,8 @@ function parseAndAppend (fileContent, fileName) {
 exports.createSprite = function() {
     FS.readdir(iconFolder, function(err, files) {
         files.forEach(function(file, index) {
+
             var filepath =  iconFolder +"/"+ file;
-           // var targetPath =  targetFolder +"/"+ file;
             var fileName = file.slice(0, -4);
 
             FS.readFile(filepath, 'utf8', function(err, data) {
@@ -128,3 +127,5 @@ exports.createSprite = function() {
         });
     });
 }
+
+this.createSprite();
