@@ -9,6 +9,8 @@ var FS = require('fs'),
     symbolNode,
     baseSvgNode = $('svg');
 
+console.log(process.argv);
+
 var svgo = new SVGO({
   plugins: [{
     cleanupAttrs: true,
