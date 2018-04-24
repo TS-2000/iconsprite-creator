@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var FS = require('fs'),
     PATH = require('path'),
     SVGO = require('svgo'),
