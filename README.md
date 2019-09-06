@@ -3,7 +3,8 @@ Create svg iconsprite from single svg files
 
 
 INSTALL  
-Add "iconsprite-creator": "git://github.com/TS-2000/iconsprite-creator.git" to the devDependencies of your package.json
+Add "iconsprite-creator": "git://github.com/TS-2000/iconsprite-creator.git" . 
+to the devDependencies of your package.json
 
 USAGE  
 Adapt and add the following line to "scripts" in your package.json 
